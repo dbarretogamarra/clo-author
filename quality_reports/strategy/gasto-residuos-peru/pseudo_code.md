@@ -1,4 +1,16 @@
-# Pseudo-Code: Main Estimation
+# ⚠️ DEPRECATED — DO NOT USE FOR IMPLEMENTATION
+
+> **Este archivo está DEPRECADO desde 2026-04-12 (strategist-critic Round 3).**
+>
+> Contiene dos errores críticos que fueron corregidos en Round 2:
+> 1. **Stage 1 usa `feols()` con FE-within** — INCORRECTO. Debe ser `lm()` OLS agrupado con Mundlak means (Wooldridge 2015, JHR).
+> 2. **Bonferroni-Holm aplicado dentro de componentes D2** — INCORRECTO. Debe aplicarse entre los 3 outcomes primarios (entre dimensiones).
+>
+> **Archivo autoritativo:** `quality_reports/pseudo_code_gasto_residuos_peru.md` (en la raíz del proyecto, commit `5b3916e`).
+
+---
+
+# Pseudo-Code: Main Estimation [VERSIÓN ANTIGUA — DEPRECADA]
 ## Gasto en Limpieza Pública y Gestión de Residuos Sólidos, Perú 2011–2020
 
 **Note:** This is specification-level pseudo-code. It describes the estimation logic without running any code.  
